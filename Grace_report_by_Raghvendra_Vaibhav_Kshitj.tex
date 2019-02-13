@@ -10,10 +10,10 @@
 \begin{document}
 
 
-\includegraphics[scale=.44]{grace1}
+%\includegraphics[scale=.44]{grace1}
 \newpage
 \section*{\centerline{Stochastic Filtering of} \centerline{GRACE Mission Data}}
-\section{Introduction}
+\section{Introduction to GRACE Mission}
  The gravity recovery and climate experiment (grace) satellite mission was launched
 on the 17 th of March in 2002 as a joint partnership between the National Aeronautics
 and Space Administration (NASA) and the Deutsches Zentrum für Luft- und Raumfahrt
@@ -36,8 +36,9 @@ GRACE consists of two identical spacecraft that fly about 220 kilometers (137 mi
 
 The gravity variations studied by GRACE include: changes due to surface and deep currents in the ocean; runoff and ground water storage on land masses; exchanges between ice sheets or glaciers and the ocean; and variations of mass within Earth. Another goal of the mission is to create a better profile of Earth's atmosphere. GRACE results are making a huge contribution to the goals of NASA's Science Mission Directorate, Earth Observation System (EOS) and global climate change studies.
 \newpage
-%put the photo
-\includegraphics[scale=0.42]{grace2}
+
+%\includegraphics[scale=0.42]{grace2}
+
 \\
 A simplified example of how the distance between the GRACE-FO satellites changes as they pass from the Caribbean Sea across Colombia and Peru (which have higher mass than the oceans) to the Pacific Ocean. Panel 1: When both spacecraft are over the ocean, the distance between them is relatively constant. 
 A simplified example of how the distance between the GRACE-FO satellites changes as they pass from the Caribbean Sea across Colombia and Peru (which have higher mass than the oceans) to the Pacific Ocean.
@@ -58,7 +59,7 @@ Panel 4: When both spacecraft are over water again, the trailing spacecraft is s
 
 \section{Potential Fields}
 \begin{itemize}
-\item They are conservative( path independent fields ) in nature.     
+\item They are conservative (path independent fields) in nature.     
 \item Also known as Harmonics.
 \end{itemize}
 \paragraph{Harmonics:-} 
@@ -160,11 +161,11 @@ The results were comparable to the original gravity field for R=6400 which is th
 After writing the code for single point we wrote code for the whole globe by dividing the globe into grid of 360*180 with the gap of pi/180 between each of the grid point.
 and we observed that field had basically three bands and there were other little variations in between these bigger bands. The results were as expected, the major three bands should come out as the gravitational fields near the poles is different from the gravitational fields near the equator. and there is a gradual pattern of field from north pole to equator and similarly from equator to south pole as the mass of earth varies in the same way.
 
-  \subparagraph{ \centerline{Plot of Grid}}
+\subparagraph{ \centerline{Plot of Grid}}
   
-  
+ 
 
-\includegraphics[scale=0.21]{devd}
+%\includegraphics[scale=0.21]{devd}
 
 \newpage
 
@@ -224,7 +225,7 @@ the spherical harmonic coefficients $\widetilde{C}_{lm}$ and $\widetilde{S}_{lm}
 
 \textbf{In simple words,}
 \\The actual shape of the Earth is a geoid. To study about the various features of the earth, the shape of the Earth is best approximated by an ellipse.
-\\The study of the small changes happening in the gravitational potential of the Earth is done by studing disturbance field which is obtained by substarcting the ellipsoidal shape from the actual geoid shape of the Earth.\\\\
+\\The study of the small changes happening in the gravitational potential of the Earth is done by studying disturbance field which is obtained by substracting the ellipsoidal shape from the actual geoid shape of the Earth.\\\\
 
 \subsection{Implementation of the program for finding\\Disturbance Potential of the Earth:}
 \begin{description}
@@ -244,8 +245,8 @@ the spherical harmonic coefficients $\widetilde{C}_{lm}$ and $\widetilde{S}_{lm}
 	\end{description}
 \end{description}
 
-\textbf{\centerline{Here is the plot for Disturbance Field:}}\\\\
-\includegraphics[scale=0.30]{DisturbanceField}
+\textbf{\centerline{Plot for Disturbance Field of every month of year 2010:}}\\\\
+%\includegraphics[scale=0.30]{DisturbanceField}
 \newpage
 
 
@@ -282,7 +283,7 @@ Then the SC-format stores the coefficients in the following $(L + 1)\times (2L +
 \end{bmatrix}%
 \]\\
 The upper left and right corners should be filled with zeros. For some \\ numerical purposes,
-it could be handy though, to use a small number $epslon$, e.g. $\epsilon = 10^{-20}$.
+it could be handy though, to use a small number $epsilon$, e.g. $\epsilon = 10^{-20}$.
 The name SC-format is chosen since the $S_{lm}$-coefficients are at the LHS and the $C_{lm}$-coefficients at the RHS of the matrix\\
 $EXAMPLE: clm2sc\quad(\,clm,\, max_lm,\, 30, gcoef2sc,\, false\,)\,;$
 %Using Sctriplot function SCTRIPLOT plots the triangles of SH coefficients stored in SC-format. If stored in CS format it is converted to SC-format before plotting.
@@ -292,7 +293,8 @@ $EXAMPLE: clm2sc\quad(\,clm,\, max_lm,\, 30, gcoef2sc,\, false\,)\,;$
 
 \begin{figure}[ht]
 \centering
-\includegraphics[scale=0.22]{Triangle}
+
+%\includegraphics[scale=0.22]{Triangle}
 
 \end{figure}
 
